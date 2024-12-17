@@ -1,1 +1,59 @@
 
+Video Games Sales Data Cleaning and Visualization
+
+Project Overview
+This project involves cleaning and visualizing a dataset of video game sales using Pandas, Matplotlib, and Seaborn. The dataset (Video_Games_Sales_2016.csv) includes global sales data categorized by region, platform, and product details.
+
+The project is divided into two main parts:
+
+Data Cleaning: Removing blank cells, dropping unnecessary columns, renaming columns, and checking data integrity.
+Visualization: Summarizing and visualizing global sales data for the top 10 products.
+Steps Performed
+1. Import Necessary Libraries
+The required libraries, including Pandas for data manipulation and Matplotlib/Seaborn for visualizations, are imported.
+
+2. Load the Dataset
+The video games sales dataset is read using pd.read_csv() for analysis.
+
+3. Checking Column Names
+Initial inspection of the dataset using head() and tail() ensures proper data structure.
+
+4. Calculate Specific Columns
+Sales-related calculations such as sum(), count(), max(), min(), and mean() are performed on the "Global_Sales" column.
+
+5. Remove Specific Columns
+Unnecessary columns, including 'Rating', 'Developer', and 'Year_of_Release', are removed using drop().
+
+6. Count Blank Cells
+Blank cells are identified and counted using isnull().sum().
+
+7. Remove Blanks from Specific Columns
+Rows with blank cells in the "Name" column are dropped to maintain data quality.
+
+8. Verify Blank Removal
+The dataset is checked again for blank cells to confirm clean data.
+
+9. Rename Columns
+Columns like "NA_Sales", "EU_Sales", and "JP_Sales" are renamed for clarity to "North_America_sales", "European_union", and "Japan_sales", respectively.
+
+10. Visualize Data with Labels
+Top 10 products by "Global_Sales" are visualized using a bar chart. Product names are plotted on the x-axis, and their respective sales values on the y-axis. Data labels are added to provide clarity.
+
+Visualization Highlights
+The final bar chart displays the top 10 products by global sales, with data labels to indicate exact sales figures.
+
+Tools Used
+Pandas: Data cleaning and manipulation
+Matplotlib: Data visualization
+Seaborn: Enhanced visual styling
+Dataset
+The dataset used in this project is:
+File Name: Video_Games_Sales_2016.csv
+
+How to Run the Project
+Clone the repository to your local machine.
+Ensure all necessary libraries (Pandas, Matplotlib, and Seaborn) are installed.
+Run the Jupyter Notebook or Python script to execute the steps.
+
+Author
+This project was developed for educational purposes to demonstrate data cleaning and visualization in Python.
