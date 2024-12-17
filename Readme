@@ -1,5 +1,6 @@
 
 Video Games Sales Data Cleaning and Visualization
+
 Project Overview
 This project involves cleaning and visualizing a dataset of video game sales using Pandas, Matplotlib, and Seaborn. The dataset (Video_Games_Sales_2016.csv) includes global sales data categorized by region, platform, and product details.
 
